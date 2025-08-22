@@ -10,5 +10,15 @@ img {
 
 a {
   display: inline-block;
-  color: inherit;
+  color: $black;
+
+  &:hover {
+    color: $natural-30;
+  }
+}
+
+ul,
+ol {
+  list-style-type: none;
+  margin-bottom: 0;
 }
