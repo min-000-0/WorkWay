@@ -1,5 +1,7 @@
-.side-width {
-  width: 300px;
+@media (min-width: 767px) {
+  .side-width {
+    width: 300px;
+  }
 }
 
 .tab-btn-bg {
