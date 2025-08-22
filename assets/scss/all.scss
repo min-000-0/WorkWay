@@ -1,0 +1,25 @@
+// bootstrap functions
+@import "../../node_modules/bootstrap/scss/functions";
+
+// variables
+@import "./utils/variables";
+
+// bootstrap
+@import "../../node_modules/bootstrap";
+
+// base
+@import "/assets/scss/base/base";
+
+// utilities
+@import "./utils/utilities";
+
+// bootstrap utilities api
+@import "bootstrap/scss/utilities/api";
+
+// layout
+@import "./layout/header.scss";
+@import "./layout/footer.scss";
+
+// pages
+@import "./pages/index.scss";
+@import "/assets/scss/pages/user";
