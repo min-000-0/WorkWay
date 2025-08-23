@@ -7,10 +7,14 @@
   href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
   rel="stylesheet"
 />
+<link
+  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+  rel="stylesheet"
+/>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <title>服務方案</title>
-    <script type="module" crossorigin src="/WorkWay/assets/main-DVgBaWGT.js"></script>
-    <link rel="stylesheet" crossorigin href="/WorkWay/assets/main-BhizU2nf.css">
+    <script type="module" crossorigin src="/WorkWay/assets/main-DmIncrU9.js"></script>
+    <link rel="stylesheet" crossorigin href="/WorkWay/assets/main-DWSSQCM6.css">
   </head>
   <body>
     <nav class="navbar bg-white border-bottom py-3">
@@ -97,7 +101,227 @@
   </div>
 </nav>
 
-    <main></main>
+    <main>
+      <!-- 服務方案 -->
+      <div class="service-banner">
+        <picture class="banner-bg">
+          <source
+            media="(max-width: 767px)"
+            srcset="data:image/png;base64,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"
+          />
+          <img src="/WorkWay/assets/banner-bg-pc-CrJ0aIBr.png" alt="banner" />
+        </picture>
+        <div class="text-center service-banner_content">
+          <h1 class="mb-6">服務方案</h1>
+          <p class="text-natural-50">
+            我們最全面的服務方案，為您提供從評估、規劃到實踐的完整支持。不再擔心轉型過程中的各種挑戰，我們的專家團隊將全程陪伴，確保您順利實現職業自由。
+          </p>
+        </div>
+      </div>
+      <!-- 職涯轉型全程計畫 -->
+      <div class="py-7">
+        <div class="container">
+          <!-- title -->
+          <div class="d-flex flex-column align-items-center mb-6">
+            <img
+              src="/WorkWay/assets/goal-Bpk-8BlK.svg"
+              alt="goal"
+              class="mb-1"
+            />
+            <h2 class="mb-5">職涯轉型全程計畫</h2>
+            <p class="text-natural-50">從企業到自由，無縫轉型之旅</p>
+          </div>
+          <!-- card -->
+          <ul>
+            <li
+              class="d-flex mb-4 mb-lg-5 p-5 p-lg-6 gap-5 border border-2 border-secondary rounded-5"
+            >
+              <div class="left">
+                <div class="mb-5">
+                  <p class="text-primary-60 mb-2">全面方案</p>
+                  <h3 class="mb-2">職涯轉型全程計畫</h3>
+                  <p class="mb-2">
+                    針對希望完全改變職業領域的資深專業人士。我們的專家團隊將協助您將過往經驗轉化為新領域的競爭優勢。
+                  </p>
+                  <ul>
+                    <li class="d-flex align-items-center mb-1">
+                      <span class="material-symbols-outlined text-primary me-2"
+                        >stat_0</span
+                      >深度職能轉換評估與規劃
+                    </li>
+                    <li class="d-flex align-items-center mb-1">
+                      <span class="material-symbols-outlined text-primary me-2"
+                        >stat_0</span
+                      >跨領域技能遷移策略
+                    </li>
+                    <li class="d-flex align-items-center mb-1">
+                      <span class="material-symbols-outlined text-primary me-2"
+                        >stat_0</span
+                      >新領域人脈建立指導
+                    </li>
+                    <li class="d-flex align-items-center mb-1">
+                      <span class="material-symbols-outlined text-primary me-2"
+                        >stat_0</span
+                      >長期職涯發展藍圖
+                    </li>
+                  </ul>
+                </div>
+                <div class="mb-5 p-5 bg-natural-95 rounded-1">
+                  <p class="mb-2">
+                    適合對象：
+                    <span class="fw-bold"
+                      >從企業職場轉型為自由工作者 / 數位遊牧者的專業人士</span
+                    >
+                  </p>
+                  <p>
+                    優惠價格：
+                    <span class="fs-4 fw-bold text-primary-60"
+                      >NT$ 120,000</span
+                    >
+                  </p>
+                </div>
+                <button type="button" class="btn btn-dark pe-3">
+                  我有興趣<span
+                    class="material-icons-outlined ms-1 align-bottom"
+                  >
+                    keyboard_arrow_right
+                  </span>
+                </button>
+              </div>
+              <div class="right">
+                <img
+                  src="/WorkWay/assets/plan-1-DhruYoqJ.svg"
+                  alt="plan-1"
+                  class="d-none d-lg-block"
+                />
+              </div>
+            </li>
+            <li class="d-flex mb-4 mb-lg-5 p-5 p-lg-6 gap-5 shadow rounded-5">
+              <div class="left">
+                <div class="mb-5">
+                  <p class="text-primary-60 mb-2">全面方案</p>
+                  <h3 class="mb-2">職涯轉型全程計畫</h3>
+                  <p class="mb-2">
+                    針對希望完全改變職業領域的資深專業人士。我們的專家團隊將協助您將過往經驗轉化為新領域的競爭優勢。
+                  </p>
+                  <ul>
+                    <li class="d-flex align-items-center mb-1">
+                      <span class="material-symbols-outlined text-primary me-2"
+                        >stat_0</span
+                      >深度職能轉換評估與規劃
+                    </li>
+                    <li class="d-flex align-items-center mb-1">
+                      <span class="material-symbols-outlined text-primary me-2"
+                        >stat_0</span
+                      >跨領域技能遷移策略
+                    </li>
+                    <li class="d-flex align-items-center mb-1">
+                      <span class="material-symbols-outlined text-primary me-2"
+                        >stat_0</span
+                      >新領域人脈建立指導
+                    </li>
+                    <li class="d-flex align-items-center mb-1">
+                      <span class="material-symbols-outlined text-primary me-2"
+                        >stat_0</span
+                      >長期職涯發展藍圖
+                    </li>
+                  </ul>
+                </div>
+                <div class="mb-5 p-5 bg-natural-95 rounded-1">
+                  <p class="mb-2">
+                    適合對象：
+                    <span class="fw-bold"
+                      >從企業職場轉型為自由工作者 / 數位遊牧者的專業人士</span
+                    >
+                  </p>
+                  <p>
+                    優惠價格：
+                    <span class="fs-4 fw-bold text-primary-60"
+                      >NT$ 120,000</span
+                    >
+                  </p>
+                </div>
+                <button type="button" class="btn btn-dark pe-3">
+                  我有興趣<span
+                    class="material-icons-outlined ms-1 align-bottom"
+                  >
+                    keyboard_arrow_right
+                  </span>
+                </button>
+              </div>
+              <div class="right">
+                <img
+                  src="/WorkWay/assets/plan-1-DhruYoqJ.svg"
+                  alt="plan-1"
+                  class="d-none d-lg-block"
+                />
+              </div>
+            </li>
+            <li class="d-flex p-5 p-lg-6 gap-5 shadow rounded-5">
+              <div class="left">
+                <div class="mb-5">
+                  <p class="text-primary-60 mb-2">全面方案</p>
+                  <h3 class="mb-2">職涯轉型全程計畫</h3>
+                  <p class="mb-2">
+                    針對希望完全改變職業領域的資深專業人士。我們的專家團隊將協助您將過往經驗轉化為新領域的競爭優勢。
+                  </p>
+                  <ul>
+                    <li class="d-flex align-items-center mb-1">
+                      <span class="material-symbols-outlined text-primary me-2"
+                        >stat_0</span
+                      >深度職能轉換評估與規劃
+                    </li>
+                    <li class="d-flex align-items-center mb-1">
+                      <span class="material-symbols-outlined text-primary me-2"
+                        >stat_0</span
+                      >跨領域技能遷移策略
+                    </li>
+                    <li class="d-flex align-items-center mb-1">
+                      <span class="material-symbols-outlined text-primary me-2"
+                        >stat_0</span
+                      >新領域人脈建立指導
+                    </li>
+                    <li class="d-flex align-items-center mb-1">
+                      <span class="material-symbols-outlined text-primary me-2"
+                        >stat_0</span
+                      >長期職涯發展藍圖
+                    </li>
+                  </ul>
+                </div>
+                <div class="mb-5 p-5 bg-natural-95 rounded-1">
+                  <p class="mb-2">
+                    適合對象：
+                    <span class="fw-bold"
+                      >從企業職場轉型為自由工作者 / 數位遊牧者的專業人士</span
+                    >
+                  </p>
+                  <p>
+                    優惠價格：
+                    <span class="fs-4 fw-bold text-primary-60"
+                      >NT$ 120,000</span
+                    >
+                  </p>
+                </div>
+                <button type="button" class="btn btn-dark pe-3">
+                  我有興趣<span
+                    class="material-icons-outlined ms-1 align-bottom"
+                  >
+                    keyboard_arrow_right
+                  </span>
+                </button>
+              </div>
+              <div class="right">
+                <img
+                  src="/WorkWay/assets/plan-1-DhruYoqJ.svg"
+                  alt="plan-1"
+                  class="d-none d-lg-block"
+                />
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </main>
 
     <footer class="footer bg-natural-95 border-top">
   <div class="container">
