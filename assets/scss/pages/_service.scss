@@ -22,6 +22,20 @@
   }
 }
 
+.card-badge {
+    position: relative;
+    overflow: hidden;
+
+    .badge {
+        font-size: 14px;
+        line-height: 1.2;
+        position: absolute;
+        left: -2px;
+        top: -2px;
+        border-radius: 0 0 12px 0;
+    }
+}
+
 .support-section {
     position: relative;
 
