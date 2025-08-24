@@ -24,6 +24,7 @@
 
 .support-section {
     position: relative;
+
     
     .support-section-bg {
         position: absolute;
@@ -47,7 +48,7 @@
         position: absolute;
         left: 50%;
         transform: translate(-327px);
-        bottom: 0;
+        bottom: -2px;
         z-index: 1;
 
     }
@@ -55,7 +56,7 @@
         position: absolute;
         right: 50%;
         transform: translate(327px);
-        bottom: 0;
+        bottom: -2px;
         z-index: 1;
 
     }
@@ -64,15 +65,13 @@
         top: 0;
         right: 0;
         z-index: 0;
-        width: 100%;
-        object-fit: none;
-        // width: 600px;
-        // height: 160px;
         
-        // @include media-breakpoint-up(md) {
-        //     width: 100%;
-        //     height: auto;
-        // }
+        @include media-breakpoint-down(md) {
+            object-position: right top;
+            width: auto;
+            height: 160px;
+            object-fit: none;
+        }
 
     }
 }
