@@ -7,102 +7,59 @@
   <body>
     <%- include('./layout/header'); -%>
 
-    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-      <li class="nav-item" role="presentation">
-        <button
-          class="nav-link active"
-          id="pills-home-tab"
-          data-bs-toggle="pill"
-          data-bs-target="#pills-home"
-          type="button"
-          role="tab"
-          aria-controls="pills-home"
-          aria-selected="true"
-        >
-          Home
-        </button>
-      </li>
-      <li class="nav-item" role="presentation">
-        <button
-          class="nav-link"
-          id="pills-profile-tab"
-          data-bs-toggle="pill"
-          data-bs-target="#pills-profile"
-          type="button"
-          role="tab"
-          aria-controls="pills-profile"
-          aria-selected="false"
-        >
-          Profile
-        </button>
-      </li>
-      <li class="nav-item" role="presentation">
-        <button
-          class="nav-link"
-          id="pills-contact-tab"
-          data-bs-toggle="pill"
-          data-bs-target="#pills-contact"
-          type="button"
-          role="tab"
-          aria-controls="pills-contact"
-          aria-selected="false"
-        >
-          Contact
-        </button>
-      </li>
-      <li class="nav-item" role="presentation">
-        <button
-          class="nav-link"
-          id="pills-disabled-tab"
-          data-bs-toggle="pill"
-          data-bs-target="#pills-disabled"
-          type="button"
-          role="tab"
-          aria-controls="pills-disabled"
-          aria-selected="false"
-          disabled
-        >
-          Disabled
-        </button>
-      </li>
-    </ul>
-    <div class="tab-content" id="pills-tabContent">
-      <div
-        class="tab-pane fade show active"
-        id="pills-home"
-        role="tabpanel"
-        aria-labelledby="pills-home-tab"
-        tabindex="0"
-      >
-        ...
+    <div class="container-fluid">
+      <div class="row justify-content-center py-7 position-relative">
+        <img
+          src="/assets/images/index/gradient-ball.png"
+          alt="gradient-ball"
+          class="gradient-ball"
+        />
+        <div class="col-8 mb-6">
+          <h1 class="text-center mb-5">
+            一起陪伴、探索<br />還有你那些未完成的夢
+          </h1>
+          <div class="d-flex flex-column flex-lg-row justify-content-between">
+            <p class="text-natural-50 mb-4 mb-lg-0">
+              自由工作很美，也很難。<br />我們用 1 對 1
+              陪伴，陪你從第一步開始，直到夢想變成日常
+            </p>
+            <button type="button" class="btn btn-secondary pe-3">
+              預約免費職涯探索<span
+                class="material-icons-outlined ms-1 align-bottom"
+              >
+                keyboard_arrow_right
+              </span>
+            </button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-4">
+            <img src="/assets/images/index/hero-1.png" alt="hero-1" />
+          </div>
+          <div class="col-4">
+            <div class="row g-3">
+              <div class="col-12">
+                <img
+                  src="/assets/images/index/hero-2.png"
+                  alt="hero-2"
+                  class="img-fluid"
+                />
+              </div>
+              <div class="col-12">
+                <img
+                  src="/assets/images/index/hero-3.png"
+                  alt="hero-3"
+                  class="img-fluid"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <img src="/assets/images/index/hero-4.png" alt="hero-4" />
+          </div>
+        </div>
       </div>
-      <div
-        class="tab-pane fade"
-        id="pills-profile"
-        role="tabpanel"
-        aria-labelledby="pills-profile-tab"
-        tabindex="0"
-      >
-        ...
-      </div>
-      <div
-        class="tab-pane fade"
-        id="pills-contact"
-        role="tabpanel"
-        aria-labelledby="pills-contact-tab"
-        tabindex="0"
-      >
-        ...
-      </div>
-      <div
-        class="tab-pane fade"
-        id="pills-disabled"
-        role="tabpanel"
-        aria-labelledby="pills-disabled-tab"
-        tabindex="0"
-      >
-        ...
-      </div>
+      <div class="text-center"></div>
     </div>
 
     <%- include('./layout/footer'); -%>
