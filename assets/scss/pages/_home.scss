@@ -19,13 +19,9 @@
   margin-right: calc(-100vw + 100%);
 }
 
-// .swiper {
-//   height: auto;
-// }
-
-// .swiper-wrapper {
-//   align-items: stretch !important; // 強制讓所有 slide 等高
-// }
+.swiper {
+  height: 100%;
+}
 
 .swiper-slide {
   width: 320px;
@@ -46,18 +42,8 @@
   }
 }
 
-.card-equal-height {
+.content {
   display: flex;
   flex-direction: column;
-  height: 100%; // 關鍵：讓卡片撐滿容器高度
-}
-
-.card-body-stretch {
-  flex: 1; // 讓內容區域撐滿剩餘空間
-  display: flex;
-  flex-direction: column;
-}
-
-.card-footer-sticky {
-  margin-top: auto; // 讓底部內容置底
+  justify-content: space-between;
 }
