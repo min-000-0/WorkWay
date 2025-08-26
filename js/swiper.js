@@ -9,12 +9,8 @@ const heroSwiper = new Swiper(".hero-swiper", {
   },
   loop: true,
   spaceBetween: 12,
+  speed: 800,
   initialSlide: 0, // 從第一張開始
-  freeMode: true, // 讓滑動更順暢
-  pagination: {
-    el: ".hero-pagination",
-    clickable: true,
-  },
 });
 
 const swiper = new Swiper(".swiper", {
@@ -24,7 +20,7 @@ const swiper = new Swiper(".swiper", {
   slidesPerView: "auto", // 使用CSS的寬度
   centeredSlides: false,
   initialSlide: 0,
-  freeMode: true,
+  freeMode: true, // 讓滑動更順暢
   pagination: {
     el: ".my-pagination",
     clickable: true,
