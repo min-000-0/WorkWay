@@ -30,6 +30,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: top;
 }
 
 .index-logo {
@@ -49,33 +50,40 @@
 
 .swiper {
   height: 100%;
-}
 
-.swiper-slide {
-  display: flex;
-  flex-direction: column;
-  width: 320px;
-  overflow: hidden;
-  height: auto;
+  .swiper-slide {
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    height: auto;
 
-  img {
-    width: 100%;
-    height: 400px;
-  }
-
-  @include media-breakpoint-up(md) {
-    width: 400px;
+    .badge {
+      position: absolute;
+      top: 24px;
+      left: 24px;
+      font-size: 16px;
+      padding: 8px 16px;
+      border-radius: 12px;
+    }
 
     img {
       width: 100%;
-      height: 500px;
+      height: 400px;
+    }
+
+    @include media-breakpoint-up(md) {
+      width: 400px;
+
+      img {
+        width: 100%;
+        height: 500px;
+      }
     }
   }
-}
-
-.content {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  .content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 }

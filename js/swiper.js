@@ -16,7 +16,7 @@ const heroSwiper = new Swiper(".hero-swiper", {
 const swiper = new Swiper(".swiper", {
   modules: [Pagination],
   loop: true,
-  spaceBetween: 16,
+  spaceBetween: 0,
   slidesPerView: "auto", // 使用CSS的寬度
   centeredSlides: false,
   initialSlide: 0,
@@ -24,12 +24,6 @@ const swiper = new Swiper(".swiper", {
   pagination: {
     el: ".my-pagination",
     clickable: true,
-  },
-
-  breakpoints: {
-    768: {
-      spaceBetween: 24,
-    },
   },
 
   on: {
