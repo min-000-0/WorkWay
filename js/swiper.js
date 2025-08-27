@@ -33,3 +33,33 @@ const swiper = new Swiper(".swiper", {
     },
   },
 });
+
+let serviceSwiper;
+const mq = window.matchMedia("(min-width: 992px)");
+
+function toggleServiceSwiper(e) {
+  if (e.matches) {
+    // 桌面：銷毀
+    if (serviceSwiper) {
+      serviceSwiper.destroy(true, true);
+      serviceSwiper = null;
+    }
+  } else {
+    // 手機：啟動
+    if (!serviceSwiper) {
+      serviceSwiper = new Swiper(".service-swiper", {
+        slidesPerView: 1.1,
+        spaceBetween: 16,
+        initialSlide: 0,
+        freeMode: true,
+        pagination: {
+          el: ".service-swiper .swiper-pagination",
+          clickable: true,
+        },
+      });
+    }
+  }
+}
+
+toggleServiceSwiper(mq);
+mq.addEventListener("change", toggleServiceSwiper);

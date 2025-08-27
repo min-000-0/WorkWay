@@ -124,3 +124,30 @@
     right: 0;
   }
 }
+
+.service-swiper .swiper-wrapper {
+  gap: 16px;
+}
+
+.service-swiper .swiper-slide {
+  max-width: 306px;
+
+  img {
+    width: 160px;
+    height: 160px;
+    margin-bottom: 24px;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .service-swiper {
+    overflow: visible;
+  }
+  .service-swiper .swiper-wrapper {
+    transform: none !important;
+  }
+
+  .service-swiper .swiper-pagination {
+    display: none;
+  }
+}
