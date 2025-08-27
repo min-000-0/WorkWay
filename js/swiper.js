@@ -13,7 +13,7 @@ const heroSwiper = new Swiper(".hero-swiper", {
   initialSlide: 0, // 從第一張開始
 });
 
-const swiper = new Swiper(".swiper", {
+const storyswiper = new Swiper(".story-swiper", {
   modules: [Pagination],
   loop: true,
   spaceBetween: 0,
@@ -48,7 +48,7 @@ function toggleServiceSwiper(e) {
     // 手機：啟動
     if (!serviceSwiper) {
       serviceSwiper = new Swiper(".service-swiper", {
-        slidesPerView: 1.1,
+        slidesPerView: "auto",
         spaceBetween: 16,
         initialSlide: 0,
         freeMode: true,
