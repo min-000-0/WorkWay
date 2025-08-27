@@ -128,22 +128,18 @@
 }
 
 @media (min-width: 992px) {
-  .services__swiper {
+  .service-swiper {
     overflow: visible;
-  }
 
-  .swiper-wrapper {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    transform: none !important; /* 清除 Swiper 內部 transform 影響 */
-    gap: 24px;
-  }
+    .swiper-wrapper {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+    }
 
-  .services__slide {
-    max-width: 306px;
-  }
-  .services__pagination {
-    display: none;
+    .services__slide {
+      max-width: 306px;
+    }
   }
 }
 
