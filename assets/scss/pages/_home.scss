@@ -155,3 +155,34 @@
     border-bottom-right-radius: 12px;
   }
 }
+
+.accordion.faq .accordion-item {
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid $natural-85;
+}
+
+.accordion.faq .accordion-item + .accordion-item {
+  margin-top: 1rem;
+
+  @include media-breakpoint-up(lg) {
+    margin-top: 1.5rem;
+  }
+}
+
+// 移除點擊狀態陰影
+.accordion-button:not(.collapsed) {
+  box-shadow: none;
+}
+
+// 展開顯示虛線
+.faq-body {
+  padding-top: 0;
+}
+
+.faq-body::before {
+  content: "";
+  display: block;
+  border-top: 1px dashed #e2e8f0;
+  margin: 0 0 1rem;
+}

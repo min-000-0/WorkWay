@@ -1,4 +1,7 @@
-import './assets/scss/all.scss';
-import 'bootstrap/dist/js/bootstrap.min.js';
+// 引入 Bootstrap 官方 CSS
+import "bootstrap/dist/css/bootstrap.min.css";
 
-console.log('Hello world');
+// 引入 Bootstrap JS (bundle 版本, 含 Popper)
+import "bootstrap/dist/js/bootstrap.bundle.min.js";
+
+import "./assets/scss/all.scss";
