@@ -156,12 +156,6 @@
   }
 }
 
-.accordion.faq .accordion-item {
-  border-radius: 12px;
-  overflow: hidden;
-  border: 1px solid $natural-85;
-}
-
 .accordion.faq .accordion-item + .accordion-item {
   margin-top: 1rem;
 
@@ -170,19 +164,26 @@
   }
 }
 
-// 移除點擊狀態陰影
-.accordion-button:not(.collapsed) {
-  box-shadow: none;
+.accordion.faq .accordion-item {
+  --bs-accordion-active-bg: $white;
+  border: 1px solid $natural-85;
+  border-radius: 12px;
+  overflow: hidden;
 }
 
-// 展開顯示虛線
+.accordion-button.faq-btn {
+  padding: 24px;
+}
+
 .faq-body {
-  padding-top: 0;
+  position: relative;
 }
 
 .faq-body::before {
   content: "";
-  display: block;
+  position: absolute;
+  left: 24px;
+  right: 24px;
+  top: 0;
   border-top: 1px dashed #e2e8f0;
-  margin: 0 0 1rem;
 }
