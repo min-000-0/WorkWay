@@ -1,3 +1,4 @@
+// hero-swiper
 import Swiper from "swiper";
 import { Pagination, Autoplay } from "swiper/modules";
 
@@ -13,10 +14,11 @@ const heroSwiper = new Swiper(".hero-swiper", {
   initialSlide: 0, // 從第一張開始
 });
 
+// story-swiper
 const storyswiper = new Swiper(".story-swiper", {
   modules: [Pagination],
   loop: true,
-  spaceBetween: 0,
+  spaceBetween: -8, //間距16px
   slidesPerView: "auto", // 使用CSS的寬度
   centeredSlides: false,
   initialSlide: 0,
@@ -32,8 +34,14 @@ const storyswiper = new Swiper(".story-swiper", {
       this.wrapperEl.style.alignItems = "stretch";
     },
   },
+  breakpoints: {
+    992: {
+      spaceBetween: 0, //間距24px
+    },
+  },
 });
 
+// service-swiper
 let serviceSwiper;
 const mq = window.matchMedia("(min-width: 992px)");
 

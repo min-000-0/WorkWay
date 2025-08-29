@@ -6,19 +6,17 @@
   </head>
   <body>
     <%- include('./layout/header'); -%>
+
     <main class="overflow-hidden position-relative">
-      <section class="my-lg-7 my-6 position-relative overflow-hidden">
-        <div class="container">
-          <div class="row justify-content-center py-6">
-            <img
-              src="/assets/images/index/gradient-ball.png"
-              alt="gradient-ball"
-              class="gradient-ball"
-            />
-            <div class="col-lg-8 justify-content-center">
-              <h1 class="text-center mb-5">
-                一起陪伴、探索<br />還有你那些未完成的夢
-              </h1>
+      <!-- hero 區塊 -->
+      <section class="py-6 py-lg-7 gradient-ball">
+        <div class="container-fluid">
+          <!-- hero 內容 -->
+          <div class="text-center py-6">
+            <h1 class="text-center mb-5">
+              一起陪伴、探索<br />還有你那些未完成的夢
+            </h1>
+            <div class="col-lg-8 justify-content-center mx-auto">
               <div
                 class="d-flex flex-column flex-lg-row justify-content-between gap-5 align-items-center"
               >
@@ -41,73 +39,67 @@
               </div>
             </div>
           </div>
-        </div>
-        <div class="container-fluid px-md-5">
-          <!-- 桌面版：特殊排版 -->
-          <div class="desktop-layout">
-            <div class="row g-3 g-lg-5">
-              <div class="col-4">
-                <img
-                  src="/assets/images/index/hero-1.png"
-                  alt="hero-1"
-                  class="img-fluid"
-                />
-              </div>
-              <div class="col-4">
-                <div class="row g-3 g-lg-5">
-                  <div class="col-12 img-center1">
-                    <img
-                      src="/assets/images/index/hero-2.png"
-                      alt="hero-2"
-                      class="img-fluid"
-                    />
-                  </div>
-                  <div class="col-12 img-center2">
-                    <img
-                      src="/assets/images/index/hero-3.png"
-                      alt="hero-3"
-                      class="img-fluid"
-                    />
-                  </div>
+          <!-- hero 圖片 -->
+          <div class="px-md-3">
+            <!-- 桌面版：特殊排版 -->
+            <div class="desktop-layout d-none d-md-block">
+              <div class="row g-3 g-lg-5">
+                <div class="col">
+                  <img
+                    src="/assets/images/index/hero-1.png"
+                    alt="hero-1"
+                    class="w-100 h-100"
+                  />
                 </div>
-              </div>
-              <div class="col-4">
-                <img
-                  src="/assets/images/index/hero-4.png"
-                  alt="hero-4"
-                  class="img-fluid"
-                />
-              </div>
-            </div>
-          </div>
-          <!-- 手機版：輪播 -->
-          <div class="mobile-carousel">
-            <div class="hero-swiper">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <img src="/assets/images/index/hero-1.png" alt="hero-1" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="/assets/images/index/hero-2.png" alt="hero-2" />
-                </div>
-                <div class="swiper-slide">
+                <div class="col">
+                  <img
+                    src="/assets/images/index/hero-2.png"
+                    alt="hero-2"
+                    class="mb-3 mb-lg-5"
+                  />
                   <img src="/assets/images/index/hero-3.png" alt="hero-3" />
                 </div>
-                <div class="swiper-slide">
-                  <img src="/assets/images/index/hero-4.png" alt="hero-4" />
+                <div class="col">
+                  <img
+                    src="/assets/images/index/hero-4.png"
+                    alt="hero-4"
+                    class="w-100 h-100"
+                  />
                 </div>
               </div>
-              <div class="swiper-pagination"></div>
+            </div>
+            <!-- 手機版：輪播 -->
+            <div class="mobile-carousel d-md-none">
+              <div class="hero-swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="/assets/images/index/hero-1.png" alt="hero-1" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="/assets/images/index/hero-2.png" alt="hero-2" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="/assets/images/index/hero-3.png" alt="hero-3" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="/assets/images/index/hero-4.png" alt="hero-4" />
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
             </div>
           </div>
         </div>
       </section>
+
+      <!-- story 區塊 -->
       <section class="story-section">
         <div class="container">
           <div
             class="row flex-column flex-lg-row align-items-center py-6 py-lg-7"
           >
-            <div class="col-lg-4 mb-lg-0 mb-5">
+            <!-- title -->
+            <div class="col-lg-4 mb-5 mb-lg-0">
               <div>
                 <img
                   src="/assets/images/logo-icon.svg"
@@ -124,7 +116,7 @@
                 </p>
               </div>
             </div>
-            <!-- Slider main container -->
+            <!-- swiper -->
             <div class="col-lg-8">
               <div class="story-swiper carousel-breakout">
                 <!-- Additional required wrapper -->
@@ -132,7 +124,7 @@
                   <!-- Slides -->
                   <div class="swiper-slide">
                     <div
-                      class="story-card position-relative p-lg-3 p-2 d-flex flex-column h-100"
+                      class="story-card position-relative p-3 d-flex flex-column h-100"
                     >
                       <span class="badge text-bg-primary">數位遊牧2年</span>
                       <div
@@ -161,7 +153,7 @@
                   </div>
                   <div class="swiper-slide">
                     <div
-                      class="story-card position-relative p-lg-3 p-2 d-flex flex-column h-100"
+                      class="story-card position-relative p-3 d-flex flex-column h-100"
                     >
                       <span class="badge text-bg-primary">數位遊牧2年</span>
                       <div
@@ -191,7 +183,7 @@
                   </div>
                   <div class="swiper-slide">
                     <div
-                      class="story-card position-relative p-lg-3 p-2 d-flex flex-column h-100"
+                      class="story-card position-relative p-3 d-flex flex-column h-100"
                     >
                       <span class="badge text-bg-primary">數位遊牧3年</span>
                       <div
@@ -221,7 +213,7 @@
                   </div>
                   <div class="swiper-slide">
                     <div
-                      class="story-card position-relative p-lg-3 p-2 d-flex flex-column h-100"
+                      class="story-card position-relative p-3 d-flex flex-column h-100"
                     >
                       <span class="badge text-bg-primary">數位遊牧2年</span>
                       <div
@@ -248,7 +240,7 @@
                   </div>
                   <div class="swiper-slide">
                     <div
-                      class="story-card position-relative p-lg-3 p-2 d-flex flex-column h-100"
+                      class="story-card position-relative p-3 d-flex flex-column h-100"
                     >
                       <span class="badge text-bg-primary">數位遊牧1年</span>
                       <div
@@ -277,7 +269,7 @@
                   </div>
                   <div class="swiper-slide">
                     <div
-                      class="story-card position-relative p-lg-3 p-2 d-flex flex-column h-100"
+                      class="story-card position-relative p-3 d-flex flex-column h-100"
                     >
                       <span class="badge text-bg-primary">數位遊牧0.5年</span>
                       <div
@@ -309,13 +301,14 @@
             </div>
           </div>
         </div>
-        <div class="bg-natural-95 story-section-bg"></div>
       </section>
+
+      <!-- 為什麼選擇職旅 -->
       <section class="bg-natural-95 py-6 py-lg-7 advantages">
         <div class="container advantages__container">
           <div class="text-center mb-5 mb-lg-6">
             <span
-              class="badge text-primary bg-white border border-2 border-primary py-3 px-4 fs-4 mb-4"
+              class="speech-bubble badge text-primary bg-white border border-2 border-primary py-3 px-4 fs-4 mb-4"
               >為什麼？</span
             >
             <h2>選擇職旅 WorkWay</h2>
@@ -383,6 +376,8 @@
           </p>
         </div>
       </section>
+
+      <!-- 遇見你的職涯夥伴 -->
       <section class="py-6">
         <div class="container">
           <div class="row g-5">
@@ -423,6 +418,8 @@
           </div>
         </div>
       </section>
+
+      <!-- 服務流程 -->
       <section class="text-bg-primary py-7">
         <div class="container">
           <div class="text-center mb-6">
@@ -517,11 +514,13 @@
           </div>
         </div>
       </section>
+
+      <!-- FAQ -->
       <section class="py-7">
         <div class="container">
           <div class="text-center mb-5 mb-lg-6">
             <span
-              class="badge text-primary bg-white border border-2 border-primary py-3 px-4 fs-4 mb-4"
+              class="speech-bubble badge text-primary bg-white border border-2 border-primary py-3 px-4 fs-4 mb-4"
               >\ Q&A /</span
             >
             <h2>你可能有些困惑...</h2>
@@ -696,42 +695,11 @@
           </div>
         </div>
       </section>
+
       <!-- CTA -->
-      <section class="py-6">
-        <div class="container">
-          <div class="py-5 px-6 bg-primary rounded-3">
-            <div class="pb-5 mb-5 border-dashed">
-              <img
-                src="/assets/images/logo-icon-w.svg"
-                alt="logo-w"
-                class="mb-5"
-              />
-              <h2 class="text-white mb-3">邁向你真正想過的生活，從這裡開始</h2>
-              <p class="text-white">
-                第一次諮詢只要 30 分鐘，可能改變你未來 30 年的生活方式
-              </p>
-            </div>
-            <div class="d-flex flex-column flex-lg-row">
-              <div class="d-flex text-white me-lg-5 mb-4 mb-lg-0">
-                <span class="material-symbols-outlined me-2">call</span>
-                <p>0800-123-123</p>
-              </div>
-              <div class="d-flex text-white me-lg-auto mb-5 mb-lg-0">
-                <span class="material-symbols-outlined me-2">mail</span>
-                <p>Sample@mail.com</p>
-              </div>
-              <button type="button" class="btn btn-dark pe-3">
-                預約免費職涯探索<span
-                  class="material-icons-outlined ms-1 align-bottom"
-                >
-                  keyboard_arrow_right
-                </span>
-              </button>
-            </div>
-          </div>
-        </div>
-      </section>
+      <%- include('./layout/cta-banner'); -%>
     </main>
+
     <%- include('./layout/footer'); -%>
 
     <script type="module" src="../main.js"></script>
