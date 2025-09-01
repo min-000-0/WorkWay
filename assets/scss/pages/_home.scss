@@ -91,6 +91,34 @@
 }
 
 // 為什麼選擇職旅
+.speech-bubble {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 14px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -16px;
+    transform: translateX(-50%);
+    border-style: solid;
+    border-width: 16px 16px 0 16px;
+    border-color: var(--bs-primary) transparent transparent transparent;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -13px;
+    transform: translateX(-50%);
+    border-style: solid;
+    border-width: 14px 14px 0 14px;
+    border-color: var(--bs-white) transparent transparent transparent;
+  }
+}
+
 .advantages {
   &__container {
     position: relative;
@@ -116,6 +144,7 @@
   }
 }
 
+// 服務流程
 @media (min-width: 992px) {
   .service-swiper {
     overflow: visible;
@@ -145,6 +174,11 @@
   }
 }
 
+// FAQ
+.faq-bg {
+  background: url(/assets/images/index/bg-grid.png) repeat top;
+}
+
 .accordion.faq .accordion-item + .accordion-item {
   margin-top: 1rem;
 
@@ -160,11 +194,19 @@
   overflow: hidden;
 }
 
-.accordion-button.faq-btn {
+/* 收合狀態 */
+.faq-btn[aria-expanded="false"] {
   padding: 24px;
+  transition: padding 300ms ease;
+}
+
+/* 展開狀態 */
+.faq-btn[aria-expanded="true"] {
+  padding: 24px 24px 16px;
 }
 
 .faq-body {
+  padding: 16px 24px 24px;
   position: relative;
 }
 
@@ -175,31 +217,10 @@
   right: 24px;
   top: 0;
   border-top: 1px dashed #e2e8f0;
+  opacity: 0;
+  transition: opacity 200ms ease;
 }
 
-.speech-bubble {
-  position: relative;
-  display: inline-block;
-
-  &::before {
-    content: "";
-    position: absolute;
-    left: 50%;
-    bottom: -16px;
-    transform: translateX(-50%);
-    border-style: solid;
-    border-width: 16px 16px 0 16px;
-    border-color: var(--bs-primary) transparent transparent transparent;
-  }
-
-  &::after {
-    content: "";
-    position: absolute;
-    left: 50%;
-    bottom: -13.5px;
-    transform: translateX(-50%);
-    border-style: solid;
-    border-width: 14px 14px 0 14px;
-    border-color: var(--bs-white) transparent transparent transparent;
-  }
+.accordion-item:has(.faq-btn[aria-expanded="true"]) .faq-body::before {
+  opacity: 1;
 }
