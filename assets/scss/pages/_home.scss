@@ -134,6 +134,19 @@
 .advantage-card {
   position: relative;
 
+  &__overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba($black, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 1;
+  }
+
+  &:hover &__overlay {
+    opacity: 1;
+  }
+
   &__badge {
     position: absolute;
     left: 0;
@@ -141,6 +154,7 @@
     border-radius: 0 12px 0 0;
     padding: 12px;
     padding-right: 24px;
+    z-index: 1;
   }
 }
 
