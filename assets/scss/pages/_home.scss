@@ -1,7 +1,27 @@
 // hero 區塊
-.gradient-ball {
-  background: url(/assets/images/index/gradient-ball.png) no-repeat center 40px /
-    800px;
+.bg-gradient-ball {
+  background-image: url(/assets/images/index/gradient-ball.png);
+  background-repeat: no-repeat;
+  background-size: 800px;
+
+  &--top {
+    background-position: center 40px;
+  }
+
+  &--right {
+    background-position: right -180px bottom -300px;
+  }
+
+  @include media-breakpoint-down(md) {
+    &--top {
+      background-size: 560px;
+    }
+
+    &--right {
+      background-size: 400px;
+      background-position: right -160px bottom -60px;
+    }
+  }
 }
 
 // 手機版輪播
