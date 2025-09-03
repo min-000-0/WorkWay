@@ -2,14 +2,14 @@
 <html lang="zh-TW">
   <head>
     <%- include('./layout/head'); -%>
-    <title>服務方案</title>
+    <title>服務方案｜職旅</title>
   </head>
   <body>
     <%- include('./layout/header'); -%>
 
     <main>
       <!-- 服務方案 -->
-      <div class="service-banner position-relative">
+      <section class="service-banner position-relative">
         <div class="py-lg-7 py-6 text-center service-banner__content">
           <div class="container">
             <h1 class="mb-5 mb-lg-6">服務方案</h1>
@@ -23,13 +23,13 @@
           alt="banner-person"
           class="banner-person d-none d-lg-block"
         />
-      </div>
+      </section>
 
       <!-- 職涯轉型全程計畫 -->
-      <div class="py-7">
+      <section class="py-7">
         <div class="container">
           <!-- title -->
-          <div class="d-flex flex-column align-items-center mb-6">
+          <div class="text-center mb-6">
             <img
               src="/assets/images/service/goal.svg"
               alt="goal"
@@ -40,14 +40,16 @@
           </div>
           <!-- card -->
           <ul>
+            <!-- card 1 -->
             <li
-              class="d-flex mb-4 mb-lg-5 pt-6 pb-5 px-5 p-lg-6 border border-2 border-secondary rounded-5 card-badge"
+              class="d-flex gap-md-5 mb-4 mb-lg-5 pt-6 pb-5 px-5 p-lg-6 border border-2 border-secondary shadow rounded-5 card-badge"
             >
-              <div class="left me-lg-5">
+              <!-- left -->
+              <div>
+                <span class="badge bg-secondary text-black fw-bold py-2 px-4"
+                  >HOT</span
+                >
                 <div class="mb-5">
-                  <span class="badge bg-secondary text-black fw-bold py-2 px-4"
-                    >HOT</span
-                  >
                   <p class="text-primary-60 mb-2">全面方案</p>
                   <h3 class="mb-2">職涯轉型全程計畫</h3>
                   <p class="mb-2">
@@ -98,16 +100,21 @@
                   </span>
                 </button>
               </div>
-              <div class="right">
+              <!-- right -->
+              <div>
                 <img
                   src="/assets/images/service/plan-1.svg"
                   alt="plan-1"
-                  class="d-none d-lg-block"
+                  class="d-none d-md-block"
                 />
               </div>
             </li>
-            <li class="d-flex mb-4 mb-lg-5 p-5 p-lg-6 shadow rounded-5">
-              <div class="left me-lg-5">
+            <!-- card 2 -->
+            <li
+              class="d-flex gap-md-5 mb-4 mb-lg-5 p-5 p-lg-6 shadow rounded-5"
+            >
+              <!-- left -->
+              <div>
                 <div class="mb-5">
                   <p class="text-primary-60 mb-2">加速方案</p>
                   <h3 class="mb-2">自由工作加速計畫</h3>
@@ -157,16 +164,21 @@
                   </span>
                 </button>
               </div>
-              <div class="right">
+              <!-- right -->
+              <div>
                 <img
                   src="/assets/images/service/plan-2.svg"
                   alt="plan-2"
-                  class="d-none d-lg-block"
+                  class="d-none d-md-block"
                 />
               </div>
             </li>
-            <li class="d-flex mb-4 mb-lg-5 p-5 p-lg-6 shadow rounded-5">
-              <div class="left me-lg-5">
+            <!-- card 3 -->
+            <li
+              class="d-flex gap-md-5 mb-4 mb-lg-5 p-5 p-lg-6 shadow rounded-5"
+            >
+              <!-- left -->
+              <div>
                 <div class="mb-5">
                   <p class="text-primary-60 mb-2">遊牧方案</p>
                   <h3 class="mb-2">數位遊牧生活計畫</h3>
@@ -216,23 +228,24 @@
                   </span>
                 </button>
               </div>
-              <div class="right">
+              <!-- right -->
+              <div>
                 <img
                   src="/assets/images/service/plan-3.svg"
                   alt="plan-3"
-                  class="d-none d-lg-block"
+                  class="d-none d-md-block"
                 />
               </div>
             </li>
           </ul>
         </div>
-      </div>
+      </section>
 
       <!-- 基礎諮詢服務 -->
       <section class="bg-natural-95 py-7">
         <div class="container">
           <!-- title -->
-          <div class="d-flex flex-column align-items-center mb-6">
+          <div class="text-center mb-6">
             <img
               src="/assets/images/service/conversation.svg"
               alt="goal"
@@ -243,10 +256,9 @@
           </div>
           <!-- card -->
           <div class="row gy-4">
+            <!-- card 1 -->
             <div class="col-lg-4">
-              <div
-                class="d-flex flex-column align-items-center shadow p-5 rounded-3"
-              >
+              <div class="text-center bg-white shadow p-5 rounded-3">
                 <img
                   src="/assets/images/service/server-1.svg"
                   alt="server-1"
@@ -266,9 +278,10 @@
                 </button>
               </div>
             </div>
+            <!-- card 2 -->
             <div class="col-lg-4">
               <div
-                class="d-flex flex-column align-items-center shadow p-5 rounded-3 border border-2 border-secondary card-badge"
+                class="text-center bg-white shadow p-5 rounded-3 border border-2 border-secondary card-badge"
               >
                 <span class="badge bg-secondary text-black fw-bold py-2 px-4"
                   >HOT</span
@@ -292,10 +305,9 @@
                 </button>
               </div>
             </div>
+            <!-- card 3 -->
             <div class="col-lg-4">
-              <div
-                class="d-flex flex-column align-items-center shadow p-5 rounded-3"
-              >
+              <div class="text-center bg-white shadow p-5 rounded-3">
                 <img
                   src="/assets/images/service/server-3.svg"
                   alt="server-3"
@@ -320,52 +332,44 @@
       </section>
 
       <!-- 持續支持方案 -->
-      <section class="py-7 support-section">
-        <div class="bg-natural-95 support-section-bg"></div>
+      <section class="support-section py-7">
         <div class="container">
           <!-- title -->
-          <div class="d-flex flex-column align-items-center mb-6">
-            <img
-              src="/assets/images/service/love.svg"
-              alt="goal"
-              class="mb-1"
-            />
+          <div class="support-section__title text-center mb-6">
+            <img src="/assets/images/service/love.svg" alt="" class="mb-1" />
             <h2>持續支持方案</h2>
           </div>
           <!-- card -->
-          <div class="row text-center">
-            <div class="col-lg-8 mx-auto">
-              <div
-                class="bg-secondary-90 border border-2 border-secondary-50 rounded-3 p-6 support-border"
-              >
-                <img
-                  src="/assets/images/service/subscribe-1.svg"
-                  alt="subscribe-1"
-                  class="subscribe-1 d-none d-lg-block"
-                />
-                <img
-                  src="/assets/images/service/subscribe-2.svg"
-                  alt="subscribe-2"
-                  class="subscribe-2 d-none d-lg-block"
-                />
-                <img
-                  src="/assets/images/service/subscribe-3.svg"
-                  alt="subscribe-3"
-                  class="subscribe-3"
-                />
-                <div class="surport-content">
-                  <h3 class="mb-2">職旅會員計畫</h3>
-                  <p class="mb-6">享有長期社群支持與資源服務</p>
-                  <p class="mb-6">NT$ 9,800 /年 ( NT$1,200 /月)</p>
-                  <button type="button" class="btn btn-dark pe-3">
-                    我有興趣<span
-                      class="material-icons-outlined ms-1 align-bottom"
-                    >
-                      keyboard_arrow_right
-                    </span>
-                  </button>
-                </div>
-              </div>
+          <div
+            class="support-card bg-secondary-90 border border-2 border-secondary-50 rounded-3 p-6 mx-auto text-center"
+          >
+            <img
+              src="/assets/images/service/subscribe-1.svg"
+              alt=""
+              class="support-card__art support-card__art--left d-none d-md-block"
+            />
+            <img
+              src="/assets/images/service/subscribe-2.svg"
+              alt=""
+              class="support-card__art support-card__art--right d-none d-md-block"
+            />
+            <img
+              src="/assets/images/service/subscribe-3.svg"
+              alt=""
+              class="support-card__art support-card__art--top"
+            />
+            <div class="support-section__content">
+              <h3 class="mb-2">職旅會員計畫</h3>
+              <p class="mb-6">享有長期社群支持與資源服務</p>
+              <p class="d-flex align-items-center justify-content-center mb-6">
+                <span class="text-primary fs-4 fw-bold me-2">NT$ 9,800</span>
+                /年 ( NT$1,200 /月)
+              </p>
+              <button type="button" class="btn btn-dark pe-3">
+                我有興趣<span class="material-icons-outlined ms-1 align-bottom">
+                  keyboard_arrow_right
+                </span>
+              </button>
             </div>
           </div>
         </div>

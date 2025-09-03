@@ -1,8 +1,7 @@
 // 服務方案
 .service-banner {
   background: url(/assets/images/service/banner-bg-pc.png) no-repeat center
-    center;
-  background-size: cover;
+    center / cover;
   overflow: hidden;
 
   &__content {
@@ -27,6 +26,7 @@
   }
 }
 
+// 職涯轉型全程計畫
 .card-badge {
   position: relative;
   overflow: hidden;
@@ -41,52 +41,63 @@
   }
 }
 
+// 持續支持方案
 .support-section {
   position: relative;
 
-  .support-section-bg {
+  // bg
+  &::before {
+    content: "";
     position: absolute;
-    width: 100%;
+    inset: 0 0 auto 0;
     height: 300px;
-    top: 0;
-    z-index: -1;
+    background-color: $natural-95;
+    z-index: 0;
   }
 
-  .surport-content {
+  &__title {
     position: relative;
-    z-index: 10;
+    z-index: 2;
+  }
+
+  &__content {
+    position: relative;
+    z-index: 2;
   }
 }
 
-.support-border {
+.support-card {
   position: relative;
+  max-width: 856px;
   overflow: hidden;
+  z-index: 1;
 
-  .subscribe-1 {
+  &__art {
     position: absolute;
-    left: 50%;
-    transform: translate(-327px);
-    bottom: -2px;
-    z-index: 1;
-  }
-  .subscribe-2 {
-    position: absolute;
-    right: 50%;
-    transform: translate(327px);
-    bottom: -2px;
-    z-index: 1;
-  }
-  .subscribe-3 {
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: 0;
+
+    &--left {
+      left: 24px;
+      bottom: -2px;
+      z-index: 1;
+    }
+
+    &--right {
+      right: 24px;
+      bottom: -2px;
+      z-index: 1;
+    }
+
+    &--top {
+      top: 0;
+      right: 0;
+      z-index: 0;
+    }
 
     @include media-breakpoint-down(md) {
-      object-position: right top;
-      width: auto;
-      height: 160px;
-      object-fit: none;
+      &--top {
+        height: 160px;
+        max-width: none;
+      }
     }
   }
 }
