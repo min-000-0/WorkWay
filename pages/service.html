@@ -9,21 +9,22 @@
 
     <main>
       <!-- 服務方案 -->
-      <div class="service-banner">
-        <picture class="banner-bg">
-          <source
-            media="(max-width: 767px)"
-            srcset="/assets/images/service/banner-bg.png"
-          />
-          <img src="/assets/images/service/banner-bg-pc.png" alt="banner" />
-        </picture>
-        <div class="text-center service-banner_content">
-          <h1 class="mb-6">服務方案</h1>
-          <p class="text-natural-50">
-            我們最全面的服務方案，為您提供從評估、規劃到實踐的完整支持。不再擔心轉型過程中的各種挑戰，我們的專家團隊將全程陪伴，確保您順利實現職業自由。
-          </p>
+      <div class="service-banner position-relative">
+        <div class="py-lg-7 py-6 text-center service-banner__content">
+          <div class="container">
+            <h1 class="mb-5 mb-lg-6">服務方案</h1>
+            <p class="text-natural-50">
+              我們最全面的服務方案，為您提供從評估、規劃到實踐的完整支持。不再擔心轉型過程中的各種挑戰，我們的專家團隊將全程陪伴，確保您順利實現職業自由。
+            </p>
+          </div>
         </div>
+        <img
+          src="/assets/images/service/banner-person.svg"
+          alt="banner-person"
+          class="banner-person d-none d-lg-block"
+        />
       </div>
+
       <!-- 職涯轉型全程計畫 -->
       <div class="py-7">
         <div class="container">
@@ -226,6 +227,7 @@
           </ul>
         </div>
       </div>
+
       <!-- 基礎諮詢服務 -->
       <section class="bg-natural-95 py-7">
         <div class="container">
@@ -316,6 +318,7 @@
           </div>
         </div>
       </section>
+
       <!-- 持續支持方案 -->
       <section class="py-7 support-section">
         <div class="bg-natural-95 support-section-bg"></div>
@@ -367,41 +370,9 @@
           </div>
         </div>
       </section>
+
       <!-- CTA -->
-      <section class="py-6">
-        <div class="container">
-          <div class="py-5 px-6 bg-primary rounded-3">
-            <div class="pb-5 mb-5 border-dashed">
-              <img
-                src="/assets/images/logo-icon-w.svg"
-                alt="logo-w"
-                class="mb-5"
-              />
-              <h2 class="text-white mb-3">邁向你真正想過的生活，從這裡開始</h2>
-              <p class="text-white">
-                第一次諮詢只要 30 分鐘，可能改變你未來 30 年的生活方式
-              </p>
-            </div>
-            <div class="d-flex flex-column flex-lg-row">
-              <div class="d-flex text-white me-lg-5 mb-4 mb-lg-0">
-                <span class="material-symbols-outlined me-2">call</span>
-                <p>0800-123-123</p>
-              </div>
-              <div class="d-flex text-white me-lg-auto mb-5 mb-lg-0">
-                <span class="material-symbols-outlined me-2">mail</span>
-                <p>Sample@mail.com</p>
-              </div>
-              <button type="button" class="btn btn-dark pe-3">
-                預約免費職涯探索<span
-                  class="material-icons-outlined ms-1 align-bottom"
-                >
-                  keyboard_arrow_right
-                </span>
-              </button>
-            </div>
-          </div>
-        </div>
-      </section>
+      <%- include('./layout/cta-banner'); -%>
     </main>
 
     <%- include('./layout/footer'); -%>
