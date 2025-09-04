@@ -40,6 +40,6 @@ const serviceSwiper = new Swiper(".service-swiper", {
 // about
 // partner-swiper
 const partnerswiper = new Swiper(".partner-swiper", {
+  spaceBetween: 24,
   slidesPerView: "auto",
-  // slidesOffsetAfter: 24,
 });

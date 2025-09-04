@@ -1,25 +1,53 @@
 // 精實的職旅夥伴
 .partner-swiper {
-  overflow: hidden;
-
   .swiper-slide {
     width: auto;
+    height: 576px;
   }
 }
 
 .partner-card {
-  width: 344px;
-  height: 600px;
-
-  &__image {
-    width: 320px;
-    height: 400px;
-  }
+  width: 320px;
+  height: 100%;
 
   &__badge {
     font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.02em;
     padding: 4px 8px;
+  }
+}
+
+// 公司資訊
+.table-width {
+  width: 120px;
+}
+
+.company-info {
+  position: relative;
+  z-index: 0;
+  &::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: min(100%, 979px);
+    background-color: $natural-95;
+    z-index: -1;
+  }
+}
+
+.company-map {
+  aspect-ratio: 303 / 200;
+  min-height: 200px;
+
+  img {
+    object-fit: cover;
+    height: 100%;
+  }
+
+  @include media-breakpoint-up(md) {
+    aspect-ratio: 3 / 1;
   }
 }
