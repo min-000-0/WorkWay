@@ -1,0 +1,25 @@
+// 精實的職旅夥伴
+.partner-swiper {
+  overflow: hidden;
+
+  .swiper-slide {
+    width: auto;
+  }
+}
+
+.partner-card {
+  width: 344px;
+  height: 600px;
+
+  &__image {
+    width: 320px;
+    height: 400px;
+  }
+
+  &__badge {
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    padding: 4px 8px;
+  }
+}

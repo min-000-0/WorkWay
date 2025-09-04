@@ -1,16 +1,195 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-TW">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>about</title>
+    <%- include('./layout/head'); -%>
+    <title>關於職旅｜職旅</title>
   </head>
   <body>
     <%- include('./layout/header'); -%>
-    <h1>我是about</h1>
+
+    <main class="overflow-hidden">
+      <!-- 關於職旅 -->
+      <section class="hero position-relative">
+        <div class="py-lg-7 py-6 text-center hero__content">
+          <div class="container">
+            <h1 class="mb-5 mb-lg-6">關於職旅</h1>
+            <p class="text-natural-50">
+              職旅 WorkWay
+              匯集了來自不同領域、擁有豐富實戰經驗的自由工作者與數位遊牧專家。根據你的需求和階段，我們提供一對一諮詢。
+              <br />
+              無論你是剛開始探索期，還是已在轉型路上遇到瓶頸，我們都能提供適合你的專業指導。
+            </p>
+          </div>
+        </div>
+        <img
+          src="/assets/images/service/banner-person.svg"
+          alt=""
+          class="hero__image d-none d-lg-block"
+        />
+      </section>
+
+      <!-- 精實的職旅夥伴 -->
+      <section class="py-lg-7 py-6">
+        <div class="container">
+          <!-- title -->
+          <div class="text-center mb-lg-6 mb-5">
+            <h2 class="mb-lg-5 mb-4">精實的職旅夥伴</h2>
+            <p class="text-natural-50">
+              我們相信，最好的指導來自於那些已經走過你想走的路，並願意伸出手拉你一把的人。
+            </p>
+          </div>
+          <!-- cards -->
+          <div class="partner-swiper carousel-breakout">
+            <div class="swiper-wrapper">
+              <!-- card 1 -->
+              <div class="swiper-slide">
+                <div class="partner-card p-3">
+                  <div class="shadow rounded-3 overflow-hidden h-100">
+                    <img
+                      src="/assets/images/about/mentor-1.png"
+                      alt="mentor-1"
+                      class="partner-card__image"
+                    />
+                    <div class="partner-card__content p-4">
+                      <p class="text-natural-50 mb-2">數位遊牧先驅</p>
+                      <h4 class="mb-4">陳志遠 Ethan Chen</h4>
+                      <span class="partner-card__badge badge border me-2"
+                        ># 遠端工作策略</span
+                      ><span class="partner-card__badge badge border"
+                        ># 數位遊牧生活設計</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- card 2 -->
+              <div class="swiper-slide">
+                <div class="partner-card p-3">
+                  <div class="shadow rounded-3 overflow-hidden h-100">
+                    <img
+                      src="/assets/images/about/mentor-2.png"
+                      alt="mentor-2"
+                      class="partner-card__image"
+                    />
+                    <div class="partner-card__content p-4">
+                      <p class="text-natural-50 mb-2">個人品牌策略專家</p>
+                      <h4 class="mb-4">林曉彤 Clara Lin</h4>
+                      <span class="partner-card__badge badge border me-2 mb-1"
+                        ># 個人品牌建立</span
+                      ><span class="partner-card__badge badge border"
+                        ># 內容行銷策略</span
+                      ><span class="partner-card__badge badge border"
+                        ># 故事行銷</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- card 3 -->
+              <div class="swiper-slide">
+                <div class="partner-card p-3">
+                  <div class="shadow rounded-3 overflow-hidden h-100">
+                    <img
+                      src="/assets/images/about/mentor-3.png"
+                      alt="mentor-3"
+                      class="partner-card__image"
+                    />
+                    <div class="partner-card__content p-4">
+                      <p class="text-natural-50 mb-2">財務自由規劃顧問</p>
+                      <h4 class="mb-4">王建明 Marcus</h4>
+                      <span class="partner-card__badge badge border me-2 mb-1"
+                        ># 稅務優化</span
+                      ><span class="partner-card__badge badge border"
+                        ># 被動收入建立</span
+                      ><span class="partner-card__badge badge border"
+                        ># 現金流管理</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- card 4 -->
+              <div class="swiper-slide">
+                <div class="partner-card p-3">
+                  <div class="shadow rounded-3 overflow-hidden h-100">
+                    <img
+                      src="/assets/images/about/mentor-4.png"
+                      alt="mentor-4"
+                      class="partner-card__image"
+                    />
+                    <div class="partner-card__content p-4">
+                      <p class="text-natural-50 mb-2">創意接案與多元收入專家</p>
+                      <h4 class="mb-4">張雅琳 Ariel</h4>
+                      <span class="partner-card__badge badge border me-2 mb-1"
+                        ># 稅務優化</span
+                      ><span class="partner-card__badge badge border"
+                        ># 創意變現策略</span
+                      ><span class="partner-card__badge badge border"
+                        ># 線上課程開發</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- card 5 -->
+              <div class="swiper-slide">
+                <div class="partner-card p-3">
+                  <div class="shadow rounded-3 overflow-hidden h-100">
+                    <img
+                      src="/assets/images/about/mentor-5.png"
+                      alt="mentor-5"
+                      class="partner-card__image"
+                    />
+                    <div class="partner-card__content p-4">
+                      <p class="text-natural-50 mb-2">遠端工作技術顧問</p>
+                      <h4 class="mb-4">李俊宏 Kevin Lee</h4>
+                      <span class="partner-card__badge badge border me-2 mb-1"
+                        ># 稅務優化</span
+                      ><span class="partner-card__badge badge border"
+                        ># 專案管理自動化</span
+                      ><span class="partner-card__badge badge border"
+                        ># 虛擬團隊管理</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- card 6 -->
+              <div class="swiper-slide">
+                <div class="partner-card p-3">
+                  <div class="shadow rounded-3 overflow-hidden h-100">
+                    <img
+                      src="/assets/images/about/mentor-6.png"
+                      alt="mentor-6"
+                      class="partner-card__image"
+                    />
+                    <div class="partner-card__content p-4">
+                      <p class="text-natural-50 mb-2">生活設計與健康平衡教練</p>
+                      <h4 class="mb-4">吳曉雯 Vivian</h4>
+                      <span class="partner-card__badge badge border me-2 mb-1"
+                        ># 稅務優化</span
+                      ><span class="partner-card__badge badge border"
+                        ># 時間管理</span
+                      ><span class="partner-card__badge badge border"
+                        ># 職涯與家庭整合</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- banner -->
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <%- include('./layout/cta-banner'); -%>
+    </main>
+
     <%- include('./layout/footer'); -%>
 
     <script type="module" src="../main.js"></script>
+    <script type="module" src="/js/swiper.js"></script>
   </body>
 </html>

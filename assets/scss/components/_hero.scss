@@ -1,0 +1,23 @@
+// 服務方案
+.hero {
+  background: url(/assets/images/service/banner-bg-pc.png) no-repeat center
+    center / cover;
+  overflow: hidden;
+
+  &__content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  &__image {
+    position: absolute;
+    right: calc(50% - 520px);
+    bottom: -8px;
+  }
+}
+
+@include media-breakpoint-down(lg) {
+  .hero {
+    background: url(/assets/images/service/banner-bg.png) repeat 0 0 / 50%;
+  }
+}
